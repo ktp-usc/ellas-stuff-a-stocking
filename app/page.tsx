@@ -2,8 +2,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
-import { Card, CardHeader, CardDescription, CardTitle } from "../ui/card";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { Card, CardHeader, CardDescription, CardTitle } from "../components/ui/card";
 import { Calendar, Gift, Heart } from "lucide-react";
 
 export default function Page() {
