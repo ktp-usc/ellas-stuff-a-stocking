@@ -1,9 +1,10 @@
-import { ImageWithFallback } from "../figma/ImageWithFallback";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";
 import { DollarSign, Gift, Heart, QrCode, Smartphone, Users } from "lucide-react";
-import eventImage from "figma:asset/1b2287fa386856a39cf2451acc2e82846b4b888b.png";
+//import eventImage from "figma:asset/1b2287fa386856a39cf2451acc2e82846b4b888b.png";
+import Link from "next/link";
 
-export function GetInvolved() {
+export default function GetInvolved() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -110,7 +111,7 @@ export function GetInvolved() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <ImageWithFallback
-                src={eventImage}
+                //src={eventImage}
                 alt="Gift wrapping volunteers"
                 className="w-full h-full object-cover"
               />

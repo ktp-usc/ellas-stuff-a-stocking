@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
-import { Card } from "../ui/card";
+
+
+import Link from "next/link";
+
+import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
+import { Card } from "../../components/ui/card";
 import { Heart, Target, Users } from "lucide-react";
+import React from "react";
 import ellaImage from "figma:asset/391755e80db83732d7649c19b83a0725a8609794.png";
 import riverBluffImage from "figma:asset/b8e3f9a2c5d1e7f4a8b2c6d9e3f7a1b5c8d2e6f9.png";
 
-export function About() {
+export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -111,7 +115,7 @@ export function About() {
             Help us continue Ella's legacy through your support and involvement.
           </p>
           <Link
-            to="/get-involved"
+            href="/get-involved"
             className="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-black/90 transition-colors"
           >
             Get Involved
