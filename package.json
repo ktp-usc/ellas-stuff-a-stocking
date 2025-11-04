@@ -2,11 +2,10 @@
   "name": "ellas-stuff-a-stocking",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ktp-usc.github.io/ellas-stuff-a-stocking/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "export": "next export",
-    "export:ci": "npm run build && npm run export",
     "start": "next start",
     "lint": "eslint"
   },
