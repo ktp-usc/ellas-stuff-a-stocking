@@ -2,11 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const BowRibbon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* SVG paths */}
-  </svg>
-);
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Navigation() {
   const pathname = usePathname();
@@ -22,8 +18,12 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2">
-            <BowRibbon />
-            <span className="font-semibold text-xl text-black">Ella's Foundation</span>
+            <ImageWithFallback
+              src="/Images/logo.png"
+              alt="Foundation Logo"
+              className="h-16 w-16 object-contain"
+            />
+            <span className="font-semibold text-xl text-black">Gabriella Shumate Memorial Foundation</span>
           </Link>
 
           <div className="flex gap-8">

@@ -111,19 +111,20 @@ export default function GetInvolved() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <ImageWithFallback
-                //src={eventImage}
-                alt="Gift wrapping volunteers"
+                src={encodeURI("/Images/Screenshot 2025-11-06 145643.png")}
+                alt="Volunteers"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1593113630400-ea4288922497?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFyaXRhYmxlJTIwZ2l2aW5nJTIwdm9sdW50ZWVyc3xlbnwxfHx8fDE3NTkyNjE1MjV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Volunteers helping"
+                src={encodeURI("/Images/Screenshot 2025-11-06 150343.png")}
+                alt="Volunteers"
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
+          <p className="text-center mt-3 text-black/60 text-sm">Photo's from last year's Ella's Stuff-a-Stocking</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-black/10">
