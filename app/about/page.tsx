@@ -1,13 +1,9 @@
-
-
 import Link from "next/link";
 
-import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
-import { Card } from "../../components/ui/card";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { Card } from "@/components/ui/card";
 import { Heart, Target, Users } from "lucide-react";
 import React from "react";
-import ellaImage from "figma:asset/391755e80db83732d7649c19b83a0725a8609794.png";
-import riverBluffImage from "figma:asset/b8e3f9a2c5d1e7f4a8b2c6d9e3f7a1b5c8d2e6f9.png";
 
 export default function About() {
   return (

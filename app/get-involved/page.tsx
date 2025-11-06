@@ -1,8 +1,7 @@
-import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";
-import { DollarSign, Gift, Heart, QrCode, Smartphone, Users } from "lucide-react";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Gift, Heart, QrCode, Smartphone, Users } from "lucide-react";
 //import eventImage from "figma:asset/1b2287fa386856a39cf2451acc2e82846b4b888b.png";
-import Link from "next/link";
 
 export default function GetInvolved() {
   return (
