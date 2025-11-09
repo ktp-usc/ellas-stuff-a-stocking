@@ -1,7 +1,6 @@
 
 
 import Link from "next/link";
-
 import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
 import { Card } from "../../components/ui/card";
 import { Heart, Target, Users } from "lucide-react";
@@ -15,10 +14,11 @@ export default function About() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6 text-black">About Ella's Foundation</h1>
+          <h1 className="text-4xl sm:text-5xl mb-6 text-black">About the Gabriella Shumate Memorial Foundation</h1>
           <p className="text-xl text-black/70">
             Honoring Ella's memory by making our community safer and supporting families in need.
           </p>
+            <hr style={{ border: '1px solid black', width: '75%', margin: '40px auto' }} />
         </div>
       </div>
 
@@ -32,7 +32,7 @@ export default function About() {
             <h2 className="text-3xl mb-6 text-black">Ella's Legacy Lives On</h2>
             <div className="space-y-4 text-black/80 leading-relaxed">
               <p>
-                The Gabriella Shumate Foundation was established in 2011, following the tragic loss of Gabriella “Ella” Shumate in a drunk driving accident. In the face of unimaginable grief, Ella's family chose to honor her memory by creating something positive and lasting.
+                The Gabriella Shumate Memorial Foundation was established in 2011, following the tragic loss of Ella Shumate in a drunk driving accident. In the face of unimaginable grief, Ella's family chose to honor her memory by creating something positive and lasting.
               </p>
               <p>
                 Founded by Dacia and Devin Shumate, the foundation represents a commitment to turning tragedy into hope and action.
@@ -97,7 +97,7 @@ export default function About() {
             <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
               <h3 className="text-xl mb-4 text-black">Devin & Dacia Shumate</h3>
               <p className="text-black/80 leading-relaxed mb-4">
-                Devin and Dacia Shumate founded Ella's Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
+                Devin and Dacia Shumate founded the Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
               </p>
               <p className="text-black/80 leading-relaxed">
                 Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella's legacy lives on through every family helped and every life saved through safe driving awareness.
