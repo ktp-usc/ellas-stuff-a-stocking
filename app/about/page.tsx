@@ -1,7 +1,6 @@
 
 
 import Link from "next/link";
-
 import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
 import { Card } from "../../components/ui/card";
 import { Heart, Target, Users } from "lucide-react";
@@ -15,10 +14,11 @@ export default function About() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6 text-black">About Ella's Foundation</h1>
+          <h1 className="text-4xl sm:text-5xl mb-6 text-black">About the Gabriella Shumate Memorial Foundation</h1>
           <p className="text-xl text-black/70">
             Honoring Ella's memory by making our community safer and supporting families in need.
           </p>
+            <hr style={{ border: '1px solid black', width: '75%', margin: '40px auto' }} />
         </div>
       </div>
 
@@ -35,10 +35,10 @@ export default function About() {
                 The Gabriella Shumate Memorial Foundation was established in 2011, following the tragic loss of Ella Shumate in a drunk driving accident. In the face of unimaginable grief, Ella's family chose to honor her memory by creating something positive and lasting.
               </p>
               <p>
-                Founded by Devin Shumate and his wife Dacia Shumate, a dedicated social studies teacher at River Bluff High School, the foundation represents a commitment to turning tragedy into hope and action.
+                Founded by Dacia and Devin Shumate, the foundation represents a commitment to turning tragedy into hope and action.
               </p>
               <p>
-                Based in Columbia, South Carolina, we work tirelessly to prevent similar tragedies through safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
+                Based in Lexington, South Carolina, we work tirelessly to prevent similar tragedies through safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
               </p>
             </div>
           </div>
@@ -156,28 +156,74 @@ export default function About() {
           <h2 className="text-3xl mb-8 text-center text-black">Meet the Founders</h2>
           <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="relative h-[400px] rounded-xl overflow-hidden">
-                  <ImageWithFallback
-                    src="/Images/Devin_and_Dacia.jpg"
-                    alt="Devin and Dacia Shumate"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl mb-4 text-black">Devin & Dacia Shumate</h3>
-                  <p className="text-black/80 leading-relaxed mb-4">
-                    Devin and Dacia Shumate founded The Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
-                  </p>
-                  <p className="text-black/80 leading-relaxed">
-                    Dacia serves as a social studies teacher at River Bluff High School, where she continues to inspire young minds daily. Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella's legacy lives on through every family helped and every life saved through safe driving awareness.
-                  </p>
-                </div>
-              </div>
+              <h3 className="text-xl mb-4 text-black">Devin & Dacia Shumate</h3>
+              <p className="text-black/80 leading-relaxed mb-4">
+                Devin and Dacia Shumate founded the Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
+              </p>
+              <p className="text-black/80 leading-relaxed">
+                Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella's legacy lives on through every family helped and every life saved through safe driving awareness.
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+       {/* Our Team — Full width pink background, matching Founders section */}
+<div className="mb-20 bg-[#FFFFFF] rounded-2xl p-8 md:p-12">
+  <h2 className="text-3xl text-center font-medium mb-8 text-black">Our Team</h2>
+
+  {/* Grid: 1 column on mobile, 2 columns on md, centered inside */}
+  <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+    {/* Dacia */}
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center gap-4">
+        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">DS</div>
+        <div>
+          <div className="font-semibold text-lg text-black">Dacia Shumate</div>
+          <div className="text-sm text-black">President</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Devin */}
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center gap-4">
+        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">DV</div>
+        <div>
+          <div className="font-semibold text-lg text-black">Devin Shumate</div>
+          <div className="text-sm text-black">Vice President</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Angel */}
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center gap-4">
+        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">AD</div>
+        <div>
+          <div className="font-semibold text-lg text-black">Angel DelPriore</div>
+          <div className="text-sm text-black">Board Member</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Kristin */}
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center gap-4">
+        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">KT</div>
+        <div>
+          <div className="font-semibold text-lg text-black">Kristin Truex</div>
+          <div className="text-sm text-black">Board Member</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
       {/* CTA Section */}
       <div className="bg-gradient-to-br from-[#FFB6D9] to-[#FFE5F1] py-16 px-4 sm:px-6 lg:px-8">

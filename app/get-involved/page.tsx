@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../..
 import { DollarSign, Gift, Heart, QrCode, Smartphone, Users } from "lucide-react";
 //import eventImage from "figma:asset/1b2287fa386856a39cf2451acc2e82846b4b888b.png";
 import Link from "next/link";
+import React from "react";
 
 export default function GetInvolved() {
   return (
@@ -14,6 +15,7 @@ export default function GetInvolved() {
           <p className="text-xl text-black/70">
             Your support helps us honor Ella's legacy and make a real difference in our community.
           </p>
+            <hr style={{ border: '1px solid black', width: '75%', margin: '40px auto' }} />
         </div>
       </div>
 

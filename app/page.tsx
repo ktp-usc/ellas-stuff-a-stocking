@@ -16,6 +16,7 @@ export default function Page() {
           <p className="text-xl text-black/70 max-w-3xl mx-auto">
             Join us in supporting families in need and promoting safe driving awareness in Columbia, South Carolina.
           </p>
+            <hr style={{ border: '1px solid black', width: '75%', margin: '40px auto' }} />
         </div>
       </div>
 
