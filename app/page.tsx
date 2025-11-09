@@ -16,6 +16,7 @@ export default function Page() {
           <p className="text-xl text-black/70 max-w-3xl mx-auto">
             Join us in supporting families in need and promoting safe driving awareness in Columbia, South Carolina.
           </p>
+            <hr style={{ border: '1px solid black', width: '75%', margin: '40px auto' }} />
         </div>
       </div>
 
@@ -33,8 +34,8 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-0">
             <div className="relative h-80 md:h-auto">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1638224966976-ae2e4257c09e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnaWZ0JTIwd3JhcHBpbmclMjBwcmVzZW50c3xlbnwxfHx8fDE3NTkxNjI0Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Gift wrapping"
+                src="/Images/Student Volunteers.jpg"
+                
                 className="w-full h-full object-cover"
               />
             </div>
@@ -80,6 +81,29 @@ export default function Page() {
           </div>
         </div>
 
+        {/* Article Quote Section */}
+        <div className="mb-16 bg-[#FFB6D9] rounded-2xl overflow-hidden shadow-lg">
+          <div className="grid md:grid-cols-2 gap-0 items-center h-56">
+            <div className="flex items-center justify-center p-4">
+              <a href="https://lexingtonsc.org/community-event/ellas-stuff-a-stocking-at-river-bluff-high-school" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full max-w-[500px] h-48 relative">
+                <ImageWithFallback
+                  src="/Images/LexRich_Article.png"
+                  alt="LexRich Article"
+                  className="w-full h-full object-contain hover:opacity-90 transition-opacity rounded-xl"
+                />
+              </a>
+            </div>
+            <div className="p-6 md:p-8 h-full flex items-center">
+              <p className="text-black text-base md:text-lg font-semibold leading-snug italic">
+                "Over the past 11 years, Ella's Stuff A Stocking has profoundly impacted the magic of the holiday season for numerous children who might otherwise go without. The program reflects the compassion, unity, and generosity that defines the River Bluff High School community."
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Additional Events/Activities */}
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="border-black/10">
@@ -87,7 +111,7 @@ export default function Page() {
               <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
                 <Heart className="h-6 w-6" style={{ color: '#FFB6D9' }} />
               </div>
-              <CardTitle className="text-black">Safe Driving Awareness</CardTitle>
+              <CardTitle className="text-black">Safe Driving Campaigns</CardTitle>
               <CardDescription className="text-black/60">
                 Year-round initiatives promoting safe and responsible driving in our community.
               </CardDescription>
@@ -99,9 +123,9 @@ export default function Page() {
               <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
                 <Gift className="h-6 w-6" style={{ color: '#FFB6D9' }} />
               </div>
-              <CardTitle className="text-black">Community Partnerships</CardTitle>
+              <CardTitle className="text-black">Elmentary School Playground Rennovations</CardTitle>
               <CardDescription className="text-black/60">
-                Working with local schools and organizations to maximize our impact.
+                Working with local elementary schools to renovate playgrounds and create safe play spaces for children.
               </CardDescription>
             </CardHeader>
           </Card>
@@ -111,7 +135,7 @@ export default function Page() {
               <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
                 <Calendar className="h-6 w-6" style={{ color: '#FFB6D9' }} />
               </div>
-              <CardTitle className="text-black">Volunteer Opportunities</CardTitle>
+              <CardTitle className="text-black">Ella's Stuff-a-Stocking</CardTitle>
               <CardDescription className="text-black/60">
                 Get involved through gift wrapping sessions and delivery assistance.
               </CardDescription>

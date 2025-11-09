@@ -1,12 +1,10 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import logo from "../assets/logo.png";
 
-const BowRibbon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* SVG paths */}
-  </svg>
-);
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Navigation() {
   const pathname = usePathname();
@@ -21,15 +19,13 @@ export function Navigation() {
     <nav className="bg-white border-b border-black/10 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center gap-2">
-            <BowRibbon />
-            <span className="font-semibold text-xl text-black">Ella's Foundation</span>
+          <Link href="/" className="flex items-center gap-2 h-16 w-auto">
+            <Image src={logo} alt="Ella's Foundation Logo" className="h-16 w-auto p-2" />
           </Link>
 
           <div className="flex gap-8">
             {navLinks.map((link) => {
               const isActive = pathname === link.path;
-
               return (
                 <Link
                   key={link.path}
