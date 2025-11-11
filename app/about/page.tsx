@@ -59,7 +59,7 @@ export default function About() {
                 <ImageWithFallback
                   src="/Images/ellas_volunteers.jpg"
                   alt="Ella's Foundation Volunteers"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <p className="mt-3 text-center text-black/60 text-sm">
@@ -84,11 +84,11 @@ export default function About() {
                 <a href="https://wach.com/news/local/river-bluff-high-school-honors-the-memory-of-teachers-daughter-killed-by-drunk-driver" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block w-full max-w-[500px] h-48 relative">
+                  className="block w-full max-w-[700px] h-72 relative rounded-2xl overflow-hidden">
                   <ImageWithFallback
                     src="/Images/Fox_article.png"
                     alt="Fox News Article"
-                    className="w-full h-full object-contain hover:opacity-90 transition-opacity rounded-xl"
+                    className="w-full h-full object-contain hover:opacity-90 transition-opacity"
                   />
                 </a>
               </div>
@@ -109,15 +109,15 @@ export default function About() {
                   "A nonprofit organization created to improve the lives of children in the community by helping schools build playgrounds and providing basic necessities for children in need"
                 </p>
               </div>
-              <div className="flex items-center justify-center p-4 order-1 md:order-2">
+              <div className="flex items-center justify-center p-4 order-1 md:order-2 rouded-xl border">
                 <a href="https://www.coladaily.com/lifestyle/photo-gallery-memorial-5k-remembers-little-girl-killed-by-drunken-driver/article_08a41084-30c4-56f9-b03a-3eec6a457255.html" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block w-full max-w-[500px] h-48 relative">
+                  className="block w-full max-w-[700px] h-72 relative rounded-2xl overflow-hidden">
                   <ImageWithFallback
                     src="/Images/Cola_daily.png"
                     alt="Cola Daily Article"
-                    className="w-full h-full object-contain hover:opacity-90 transition-opacity rounded-xl"
+                    className="w-full h-full object-contain rounded-2xl hover:opacity-90 transition-opacity"
                   />
                 </a>
               </div>
