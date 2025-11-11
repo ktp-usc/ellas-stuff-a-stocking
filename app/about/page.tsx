@@ -156,18 +156,29 @@ export default function About() {
           <h2 className="text-3xl mb-8 text-center text-black">Meet the Founders</h2>
           <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl mb-4 text-black">Devin & Dacia Shumate</h3>
-              <p className="text-black/80 leading-relaxed mb-4">
-                Devin and Dacia Shumate founded the Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
-              </p>
-              <p className="text-black/80 leading-relaxed">
-                Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella's legacy lives on through every family helped and every life saved through safe driving awareness.
-              </p>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="relative h-[400px] rounded-xl overflow-hidden">
+                  <ImageWithFallback
+                    src="/Images/Devin_and_Dacia.jpg"
+                    alt="Devin and Dacia Shumate"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl mb-4 text-black">Devin & Dacia Shumate</h3>
+                  <p className="text-black/80 leading-relaxed mb-4">
+                    Devin and Dacia Shumate founded The Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
+                  </p>
+                  <p className="text-black/80 leading-relaxed">
+                    Dacia serves as a social studies teacher at River Bluff High School, where she continues to inspire young minds daily. Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella's legacy lives on through every family helped and every life saved through safe driving awareness.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
+      
        {/* Our Team — Full width pink background, matching Founders section */}
 <div className="mb-20 bg-[#FFFFFF] rounded-2xl p-8 md:p-12">
   <h2 className="text-3xl text-center font-medium mb-8 text-black">Our Team</h2>
