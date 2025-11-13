@@ -82,26 +82,21 @@ export default function Page() {
         </div>
 
         {/* Article Quote Section */}
-        <div className="mb-16 bg-[#FFB6D9] rounded-t-3xl rounded-b-none md:rounded-b-3xl overflow-hidden shadow-lg">
-          <div className="grid md:grid-cols-2 gap-0 items-stretch md:h-80 h-auto">
-            {/* Left: image - align to pink box left corner, fill area, keep whole image visible */}
-            <div className="flex items-stretch">
-              <a
-                href="https://lexingtonsc.org/community-event/ellas-stuff-a-stocking-at-river-bluff-high-school"
-                target="_blank"
+        <div className="mb-16 bg-[#FFB6D9] rounded-2xl overflow-hidden shadow-lg">
+          <div className="grid md:grid-cols-2 gap-0 items-center h-56">
+            <div className="flex items-center justify-center p-4">
+              <a href="https://lexingtonsc.org/community-event/ellas-stuff-a-stocking-at-river-bluff-high-school" 
+                target="_blank" 
                 rel="noopener noreferrer"
-                className="block w-full h-56 md:h-full relative rounded-t-3xl md:rounded-l-3xl overflow-hidden shadow-md flex items-center justify-center bg-transparent"
-              >
+                className="block w-full max-w-[500px] h-48 relative">
                 <ImageWithFallback
-                  src="/Images/DiazPicture.png"
-                  alt="Diaz Picture"
-                  className="w-full h-full object-contain rounded-t-3xl md:rounded-l-3xl"
+                  src="/Images/LexRich_Article.png"
+                  alt="LexRich Article"
+                  className="w-full h-full object-contain hover:opacity-90 transition-opacity rounded-xl"
                 />
               </a>
             </div>
-
-            {/* Right: quote/text */}
-            <div className="p-6 md:p-10 h-full flex items-center">
+            <div className="p-6 md:p-8 h-full flex items-center">
               <p className="text-black text-base md:text-lg font-semibold leading-snug italic">
                 "Over the past 11 years, Ella's Stuff A Stocking has profoundly impacted the magic of the holiday season for numerous children who might otherwise go without. The program reflects the compassion, unity, and generosity that defines the River Bluff High School community."
               </p>
