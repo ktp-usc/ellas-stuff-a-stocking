@@ -4,11 +4,7 @@ import { usePathname } from "next/navigation";
 import Image from 'next/image';
 import logo from "../assets/logo.png";
 
-const BowRibbon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* SVG paths */}
-  </svg>
-);
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Navigation() {
   const pathname = usePathname();
@@ -31,7 +27,6 @@ export function Navigation() {
           <div className="flex gap-8">
             {navLinks.map((link) => {
               const isActive = pathname === link.path;
-
               return (
                 <Link
                   key={link.path}

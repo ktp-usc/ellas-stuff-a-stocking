@@ -35,33 +35,94 @@ export default function About() {
                 The Gabriella Shumate Memorial Foundation was established in 2011, following the tragic loss of Ella Shumate in a drunk driving accident. In the face of unimaginable grief, Ella's family chose to honor her memory by creating something positive and lasting.
               </p>
               <p>
-                Founded by Devin Shumate and his wife Dacia Shumate, a dedicated social studies teacher at River Bluff High School, the foundation represents a commitment to turning tragedy into hope and action.
+                Founded by Dacia and Devin Shumate, the foundation represents a commitment to turning tragedy into hope and action.
               </p>
               <p>
-                Based in Columbia, South Carolina, we work tirelessly to prevent similar tragedies through safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
+                Based in Lexington, South Carolina, we work tirelessly to prevent similar tragedies through safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
               </p>
             </div>
           </div>
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW5lcmljJTIwaGlnaCUyMHNjaG9vbCUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MXx8fHwxNzYwMzkyOTk3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="High School"
+              src="/Images/volunteers.jpg"
+              alt="Volunteers"
               className="w-full h-full object-cover"
             />
           </div>
         </div>
 
         {/* Mission Statement */}
-        <div className="mb-20 bg-gradient-to-br from-[#FFB6D9] to-[#FFE5F1] rounded-2xl p-8 md:p-12 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center">
-              <Target className="h-8 w-8" style={{ color: '#FFB6D9' }} />
+        <div className="mb-20 bg-gradient-to-br from-[#FFB6D9] to-[#FFE5F1] rounded-2xl p-8 md:p-12">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+                <ImageWithFallback
+                  src="/Images/ellas_volunteers.jpg"
+                  alt="Ella's Foundation Volunteers"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <p className="mt-3 text-center text-black/60 text-sm">
+                From left to right: Angel DelPriore, Devin Shumate, Dacia Shumate, Kristin Truex
+              </p>
+            </div>
+            <div>
+              <h2 className="text-3xl mb-6 text-black">Our Mission</h2>
+              <p className="text-xl text-black/80 leading-relaxed">
+                To honor Gabriella Shumate's memory by promoting safe and responsible driving practices, while providing meaningful support to families in need within our community. Through awareness, education, and compassionate action, we strive to prevent tragedies and spread hope.
+              </p>
             </div>
           </div>
-          <h2 className="text-3xl mb-6 text-black">Our Mission</h2>
-          <p className="text-xl text-black/80 max-w-3xl mx-auto leading-relaxed">
-            To honor Ella Shumate's memory by promoting safe and responsible driving practices, while providing meaningful support to families in need within our community. Through awareness, education, and compassionate action, we strive to prevent tragedies and spread hope.
-          </p>
+        </div>
+
+        {/* Press Coverage Section */}
+        <div className="mb-20 bg-[#FFE5F1] rounded-2xl overflow-hidden shadow-lg">
+          <div className="flex flex-col gap-4 p-6">
+            {/* First Quote Block */}
+            <div className="grid md:grid-cols-2 gap-6 items-center">
+              <div className="flex items-center justify-center p-4">
+                <a href="https://wach.com/news/local/river-bluff-high-school-honors-the-memory-of-teachers-daughter-killed-by-drunk-driver" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block w-full max-w-[700px] h-72 relative rounded-2xl overflow-hidden">
+                  <ImageWithFallback
+                    src="/Images/Fox_article.png"
+                    alt="Fox News Article"
+                    className="w-full h-full object-contain hover:opacity-90 transition-opacity"
+                  />
+                </a>
+              </div>
+              <div className="p-4 h-full flex items-center">
+                <p className="text-black text-base font-semibold leading-snug italic">
+                  "The Shumate's have turned this tragedy into forgiveness, into compassion, into larger life lessons, so Ella's legacy to me is just profound and it's impacting our entire school campus"
+                </p>
+              </div>
+            </div>
+
+            {/* Separator Line */}
+            <div className="border-t border-[#FFB6D9] my-2"></div>
+
+            {/* Second Quote Block */}
+            <div className="grid md:grid-cols-2 gap-6 items-center">
+              <div className="p-4 h-full flex items-center order-2 md:order-1">
+                <p className="text-black text-base font-semibold leading-snug italic">
+                  "A nonprofit organization created to improve the lives of children in the community by helping schools build playgrounds and providing basic necessities for children in need"
+                </p>
+              </div>
+              <div className="flex items-center justify-center p-4 order-1 md:order-2 rouded-xl border">
+                <a href="https://www.coladaily.com/lifestyle/photo-gallery-memorial-5k-remembers-little-girl-killed-by-drunken-driver/article_08a41084-30c4-56f9-b03a-3eec6a457255.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block w-full max-w-[700px] h-72 relative rounded-2xl overflow-hidden">
+                  <ImageWithFallback
+                    src="/Images/Cola_daily.png"
+                    alt="Cola Daily Article"
+                    className="w-full h-full object-contain rounded-2xl hover:opacity-90 transition-opacity"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* What We Do */}
@@ -93,19 +154,87 @@ export default function About() {
         {/* Founders Section */}
         <div className="bg-[#FFE5F1] rounded-2xl p-8 md:p-12">
           <h2 className="text-3xl mb-8 text-center text-black">Meet the Founders</h2>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl mb-4 text-black">Devin & Dacia Shumate</h3>
-              <p className="text-black/80 leading-relaxed mb-4">
-                Devin and Dacia Shumate founded the Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
-              </p>
-              <p className="text-black/80 leading-relaxed">
-                Dacia serves as a social studies teacher at River Bluff High School, where she continues to inspire young minds daily. Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella's legacy lives on through every family helped and every life saved through safe driving awareness.
-              </p>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="relative h-[400px] rounded-xl overflow-hidden">
+                  <ImageWithFallback
+                    src="/Images/Devin_and_Dacia.jpg"
+                    alt="Devin and Dacia Shumate"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl mb-4 text-black">Devin & Dacia Shumate</h3>
+                  <p className="text-black/80 leading-relaxed mb-4">
+                    Devin and Dacia Shumate founded The Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
+                  </p>
+                  <p className="text-black/80 leading-relaxed">
+                    Dacia serves as a social studies teacher at River Bluff High School, where she continues to inspire young minds daily. Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella's legacy lives on through every family helped and every life saved through safe driving awareness.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
+       {/* Our Team — Full width pink background, matching Founders section */}
+<div className="mb-20 bg-[#FFFFFF] rounded-2xl p-8 md:p-12">
+  <h2 className="text-3xl text-center font-medium mb-8 text-black">Our Team</h2>
+
+  {/* Grid: 1 column on mobile, 2 columns on md, centered inside */}
+  <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+    {/* Dacia */}
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center gap-4">
+        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">DS</div>
+        <div>
+          <div className="font-semibold text-lg text-black">Dacia Shumate</div>
+          <div className="text-sm text-black">President</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Devin */}
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center gap-4">
+        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">DV</div>
+        <div>
+          <div className="font-semibold text-lg text-black">Devin Shumate</div>
+          <div className="text-sm text-black">Vice President</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Angel */}
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center gap-4">
+        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">AD</div>
+        <div>
+          <div className="font-semibold text-lg text-black">Angel DelPriore</div>
+          <div className="text-sm text-black">Board Member</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Kristin */}
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center gap-4">
+        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">KT</div>
+        <div>
+          <div className="font-semibold text-lg text-black">Kristin Truex</div>
+          <div className="text-sm text-black">Board Member</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
       {/* CTA Section */}
       <div className="bg-gradient-to-br from-[#FFB6D9] to-[#FFE5F1] py-16 px-4 sm:px-6 lg:px-8">
