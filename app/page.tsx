@@ -12,7 +12,7 @@ export default function Page() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6 text-black">Making a Difference in Our Community</h1>
+          <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">Making a Difference in Our Community</h1>
           <p className="text-xl text-black/70 max-w-3xl mx-auto">
             Join us in supporting families in need and promoting safe driving awareness in Columbia, South Carolina.
           </p>

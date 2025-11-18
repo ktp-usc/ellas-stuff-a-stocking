@@ -29,45 +29,12 @@ export default function GetInvolved() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Venmo Card */}
-            <Card className="border-2" style={{ borderColor: '#FFB6D9' }}>
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="h-16 w-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FFE5F1' }}>
-                    <Smartphone className="h-8 w-8" style={{ color: '#FFB6D9' }} />
-                  </div>
-                </div>
-                <CardTitle className="text-black">Donate via Venmo</CardTitle>
-                <CardDescription className="text-black/60">
-                  Quick and easy donations through Venmo
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="bg-[#FFE5F1] rounded-xl p-8 mb-6">
-                  <div className="bg-white rounded-lg p-6 inline-block mb-4">
-                    <QrCode className="h-32 w-32" style={{ color: '#FFB6D9' }} />
-                  </div>
-                  <p className="text-sm text-black/60 mb-2">Scan QR code to donate</p>
-                  <p className="text-black/80">Or search for:</p>
-                  <p className="text-xl mt-2 text-black" style={{ color: '#FFB6D9' }}>@EllasFoundation</p>
-                </div>
-                <a
-                  href="https://venmo.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 rounded-lg text-white hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: '#FFB6D9', color: '#000000' }}
-                >
-                  Open Venmo
-                </a>
-              </CardContent>
-            </Card>
+          
 
             {/* Why Donate Card */}
-            <Card className="border-black/10">
+            <Card className="border-black/10 w-full max-w-lg mx-auto">
               <CardHeader>
-                <div className="flex justify-center mb-4">
+                <div className="flex justify-center mb-4 ">
                   <div className="h-16 w-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FFE5F1' }}>
                     <Heart className="h-8 w-8" style={{ color: '#FFB6D9' }} />
                   </div>
@@ -78,7 +45,7 @@ export default function GetInvolved() {
                 <p className="text-black/70 mb-6 text-center">
                   Your donations directly support:
                 </p>
-                <ul className="space-y-4">
+                <ul className="space-y-4 flex flex-col items-center justify-center">
                   <li className="flex gap-3">
                     <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
                     <span className="text-black/80">Purchasing gifts and necessities for families during Ella's Stuff a Stocking</span>
@@ -95,10 +62,21 @@ export default function GetInvolved() {
                     <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
                     <span className="text-black/80">Administrative costs to keep the foundation running</span>
                   </li>
+                  <a
+                  href="https://www.zeffy.com/en-US/donation-form/ella-stuff-a-stocking-program"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 rounded-lg text-white hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#FFB6D9', color: '#000000' }}
+                >
+                  Donate Now
+                </a>
                 </ul>
+
+                
               </CardContent>
             </Card>
-          </div>
+          
         </div>
 
         {/* Volunteer Section */}
