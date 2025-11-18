@@ -9,7 +9,7 @@ export default function GetInvolved() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl mb-6 text-black">Get Involved</h1>
           <p className="text-xl text-black/70">
@@ -19,7 +19,7 @@ export default function GetInvolved() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         {/* Donation Section */}
         <div className="mb-20">
           <div className="text-center mb-12">

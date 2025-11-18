@@ -12,7 +12,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl mb-6 text-black">About the Gabriella Shumate Memorial Foundation</h1>
           <p className="text-xl text-black/70">
@@ -23,7 +23,7 @@ export default function About() {
       </div>
 
       {/* Ella's Story Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: '#FFE5F1' }}>
