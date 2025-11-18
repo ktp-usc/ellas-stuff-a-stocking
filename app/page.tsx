@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl mb-6 text-black">Making a Difference in Our Community</h1>
           <p className="text-xl text-black/70 max-w-3xl mx-auto">
@@ -21,7 +21,7 @@ export default function Page() {
       </div>
 
       {/* Main Event Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl mb-4 text-black">Our Events</h2>
           <p className="text-lg text-black/70">
