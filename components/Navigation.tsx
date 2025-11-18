@@ -20,14 +20,13 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 h-16 w-auto">
-            <BowRibbon />
+            
               <Image src={logo} alt="Ella's Foundation Logo" className="h-16 w-auto p-2" />
           </Link>
 
           <div className="flex gap-8">
             {navLinks.map((link) => {
               const isActive = pathname === link.path;
-
               return (
                 <Link
                   key={link.path}
