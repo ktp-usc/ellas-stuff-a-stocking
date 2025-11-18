@@ -9,7 +9,7 @@ export default function GetInvolved() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl mb-6 text-black">Get Involved</h1>
           <p className="text-xl text-black/70">
@@ -19,7 +19,7 @@ export default function GetInvolved() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         {/* Donation Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
@@ -104,8 +104,16 @@ export default function GetInvolved() {
         {/* Volunteer Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl mb-4 text-black">Volunteer With Us</h2>
-            <p className="text-lg text-black/70 max-w-2xl mx-auto">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf31ORAKDuqD5ZyvQy9Zl7-u4pLVlr-GG_PCPQX1HkijpAeMg/viewform?usp=preview"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-10 py-5 rounded-xl text-white text-2xl font-bold hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: '#000000', color: '#FFFFFF' }}
+            >
+              Volunteer Now
+            </a>
+            <p className="text-lg text-black/70 max-w-2xl mx-auto mt-6">
               Be part of something special. We have various volunteer opportunities throughout the year.
             </p>
           </div>
