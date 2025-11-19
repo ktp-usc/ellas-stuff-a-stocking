@@ -96,7 +96,7 @@ export default function GetInvolved() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-4">
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <ImageWithFallback
                 src={encodeURI("/Images/Screenshot 2025-11-06 145643.png")}
@@ -112,7 +112,7 @@ export default function GetInvolved() {
               />
             </div>
           </div>
-          <p className="text-center mt-3 text-black/60 text-sm">Photo's from last year's Ella's Stuff-a-Stocking</p>
+          <p className="text-center mb-5  text-black/60 text-sm">Photo's from last year's Ella's Stuff-a-Stocking</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-black/10">
@@ -133,7 +133,7 @@ export default function GetInvolved() {
                   <Users className="h-6 w-6" style={{ color: '#FFB6D9' }} />
                 </div>
                 <CardTitle className="text-black">Gift Delivery</CardTitle>
-                <CardDescription className="text-black/60">
+                <CardDescription className="text-black/60 mb-5">
                   Help deliver wrapped gifts to families. This is a rewarding opportunity to see the direct impact of your efforts and bring joy to families.
                 </CardDescription>
               </CardHeader>
@@ -167,7 +167,7 @@ export default function GetInvolved() {
               Contact Us
             </a>
             <a
-              href="https://venmo.com/"
+              href="https://www.zeffy.com/en-US/donation-form/ella-stuff-a-stocking-program"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white px-8 py-3 rounded-lg hover:bg-white/90 transition-colors"
