@@ -160,12 +160,17 @@ export default function GetInvolved() {
             Whether you're interested in volunteering, making a donation, or partnering with us, we'd love to hear from you. Together, we can make a lasting impact in our community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:contact@ellasfoundation.org"
-              className="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-black/90 transition-colors"
-            >
-              Contact Us
-            </a>
+            <div className="relative inline-block group">
+              <button
+                className="bg-black text-white px-8 py-3 rounded-lg hover:bg-black/90 transition-colors cursor-default"
+              >
+                Contact Us
+              </button>
+              <div className="absolute bottom-full left-0 mb-2 hidden group-hover:block bg-black text-white px-4 py-3 rounded-lg shadow-lg whitespace-nowrap z-10">
+                <div className="text-sm font-semibold">daciashu@gmail.com</div>
+                <div className="text-sm">(253)-852-5022</div>
+              </div>
+            </div>
             <a
               href="https://www.zeffy.com/en-US/donation-form/ella-stuff-a-stocking-program"
               target="_blank"
