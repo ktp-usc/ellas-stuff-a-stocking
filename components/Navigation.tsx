@@ -16,11 +16,11 @@ export function Navigation() {
     <nav className="bg-white border-b border-black/10 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-40">
-          <Link href="/" className="flex items-center h-32 w-auto">
-              <Image src="/Images/canvaV6.png" alt="Ella's Foundation Logo" width={256} height={256} className="h-full w-auto" style={{ marginTop: '-32px', marginLeft: '-16px' }} />
-          </Link>
+            <Link href="/" className="flex items-center h-32 w-auto">
+                <Image src="/Images/canvaV6.png" alt="Ella's Foundation Logo" width={948} height={177} className="h-32 w-auto" priority/>
+            </Link>
 
-          <div className="flex gap-6" style={{ marginTop: '-16px' }}>
+            <div className="flex gap-6" style={{ marginTop: '-16px' }}>
             {navLinks.map((link) => {
               const isActive = pathname === link.path;
               return (
