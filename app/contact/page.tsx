@@ -1,32 +1,26 @@
 "use client"
 
-import { useState } from "react"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
-import Link from "next/link"
+import { useState } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
+import {Label} from "@/components/ui/label";
+import {Input} from "@/components/ui/input";
+import {Textarea} from "@/components/ui/textarea";
+import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
-export default function Page() {
+export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
-    message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
+    setIsSubmitting(true);
 
     console.log("Form submitted:", formData)
 
@@ -39,17 +33,14 @@ export default function Page() {
     }, 1500)
   }
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
+      [e.target.name]: e.target.value
+    });
+  };
 
-  const isFormValid =
-    formData.name && formData.email && formData.subject && formData.message
+  const isFormValid = formData.name && formData.email && formData.subject && formData.message;
 
   return (
     <div className="min-h-screen bg-white">
@@ -58,8 +49,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl mb-6 text-black">Contact Us</h1>
           <p className="text-xl text-black/70">
-            Have questions or want to get involved? We&apos;d love to hear from
-            you.
+            Have questions or want to get involved? We&apos;d love to hear from you.
           </p>
         </div>
       </div>
@@ -68,15 +58,14 @@ export default function Page() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Contact Form */}
           <div className="md:col-span-2">
-            <Card className="border-2" style={{ borderColor: "#FFB6D9" }}>
+            <Card className="border-2" style={{ borderColor: '#FFB6D9' }}>
               <CardHeader>
                 <CardTitle className="text-black flex items-center gap-2">
-                  <Mail className="h-6 w-6" style={{ color: "#FFB6D9" }} />
+                  <Mail className="h-6 w-6" style={{ color: '#FFB6D9' }} />
                   Send Us a Message
                 </CardTitle>
                 <CardDescription className="text-black/60">
-                  Fill out the form below and we&apos;ll get back to you as soon
-                  as possible.
+                  Fill out the form below and we&apos;ll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -151,7 +140,7 @@ export default function Page() {
                     type="submit"
                     disabled={isSubmitting || !isFormValid}
                     className="w-full py-6 text-white hover:opacity-90 disabled:opacity-50"
-                    style={{ backgroundColor: "#FFB6D9", color: "#000000" }}
+                    style={{ backgroundColor: '#FFB6D9', color: '#000000' }}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
@@ -168,7 +157,7 @@ export default function Page() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex gap-3">
-                  <Mail className="h-5 w-5 mt-1" style={{ color: "#FFB6D9" }} />
+                  <Mail className="h-5 w-5 mt-1" style={{ color: '#FFB6D9' }} />
                   <div>
                     <p className="text-sm text-black/60">Email</p>
                     <a
@@ -181,7 +170,7 @@ export default function Page() {
                 </div>
 
                 <div className="flex gap-3">
-                  <Phone className="h-5 w-5 mt-1" style={{ color: "#FFB6D9" }} />
+                  <Phone className="h-5 w-5 mt-1" style={{ color: '#FFB6D9' }} />
                   <div>
                     <p className="text-sm text-black/60">Phone</p>
                     <a href="tel:+18035551234" className="text-black hover:underline">
@@ -231,5 +220,5 @@ export default function Page() {
         </div>
       </div>
     </div>
-  )
+  );
 }

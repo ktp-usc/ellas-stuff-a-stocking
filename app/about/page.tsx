@@ -1,10 +1,8 @@
-
-
 import Link from "next/link";
-import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
-import { Card } from "../../components/ui/card";
-import { Heart, Target, Users } from "lucide-react";
+import { Heart, Users } from "lucide-react";
 import React from "react";
+import {ImageWithFallback} from "@/components/figma/ImageWithFallback";
+import {Card} from "@/components/ui/card";
 
 
 export default function About() {
@@ -15,7 +13,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">About the Gabriella Shumate Memorial Foundation</h1>
           <p className="text-xl text-black/70">
-            Honoring Ella's memory by making our community safer and supporting families in need.
+            Honoring Ella&apos;s memory by making our community safer and supporting families in need.
           </p>
             <hr style={{ border: '1px solid black', width: '75%', margin: '40px auto' }} />
         </div>
@@ -28,10 +26,10 @@ export default function About() {
             <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: '#FFE5F1' }}>
               <span className="text-black">Our Story</span>
             </div>
-            <h2 className="text-3xl mb-6 text-black">Ella's Legacy Lives On</h2>
+            <h2 className="text-3xl mb-6 text-black">Ella&apos;s Legacy Lives On</h2>
             <div className="space-y-4 text-black/80 leading-relaxed">
               <p>
-                The Gabriella Shumate Memorial Foundation was established in 2011, following the tragic loss of Ella Shumate in a drunk driving accident. In the face of unimaginable grief, Ella's family chose to honor her memory by creating something positive and lasting.
+                The Gabriella Shumate Memorial Foundation was established in 2011, following the tragic loss of Ella Shumate in a drunk driving accident. In the face of unimaginable grief, Ella&apos;s family chose to honor her memory by creating something positive and lasting.
               </p>
               <p>
                 Founded by Dacia and Devin Shumate, the foundation represents a commitment to turning tragedy into hope and action.
@@ -68,7 +66,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl mb-6 text-black">Our Mission</h2>
               <p className="text-xl text-black/80 leading-relaxed">
-                To honor Gabriella Shumate's memory by promoting safe and responsible driving practices, while providing meaningful support to families in need within our community. Through awareness, education, and compassionate action, we strive to prevent tragedies and spread hope.
+                To honor Gabriella Shumate&apos;s memory by promoting safe and responsible driving practices, while providing meaningful support to families in need within our community. Through awareness, education, and compassionate action, we strive to prevent tragedies and spread hope.
               </p>
             </div>
           </div>
@@ -93,7 +91,7 @@ export default function About() {
               </div>
               <div className="p-4 h-full flex items-center">
                 <p className="text-black text-base font-semibold leading-snug italic">
-                  "The Shumate's have turned this tragedy into forgiveness, into compassion, into larger life lessons, so Ella's legacy to me is just profound and it's impacting our entire school campus"
+                    &quot;The Shumate&apos;s have turned this tragedy into forgiveness, into compassion, into larger life lessons, so Ella&apos;s legacy to me is just profound and it&apos;s impacting our entire school campus&quot;
                 </p>
               </div>
             </div>
@@ -105,7 +103,7 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-6 items-center">
               <div className="p-4 h-full flex items-center order-2 md:order-1">
                 <p className="text-black text-base font-semibold leading-snug italic">
-                  "A nonprofit organization created to improve the lives of children in the community by helping schools build playgrounds and providing basic necessities for children in need"
+                    &quot;A nonprofit organization created to improve the lives of children in the community by helping schools build playgrounds and providing basic necessities for children in need&quot;
                 </p>
               </div>
               <div className="flex items-center justify-center p-4 order-1 md:order-2">
@@ -144,7 +142,7 @@ export default function About() {
               </div>
               <h3 className="text-xl mb-4 text-black">Supporting Families in Need</h3>
               <p className="text-black/70 leading-relaxed">
-                We partner with local elementary schools to identify and support financially unstable families. Our flagship program, Ella's Stuff a Stocking, provides gifts and necessities to families during the holiday season, bringing joy when it's needed most.
+                We partner with local elementary schools to identify and support financially unstable families. Our flagship program, Ella&apos;s Stuff a Stocking, provides gifts and necessities to families during the holiday season, bringing joy when it&apos;s needed most.
               </p>
             </Card>
           </div>
@@ -169,7 +167,7 @@ export default function About() {
                     Devin and Dacia Shumate founded The Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
                   </p>
                   <p className="text-black/80 leading-relaxed">
-                    Dacia serves as a social studies teacher at River Bluff High School, where she continues to inspire young minds daily. Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella's legacy lives on through every family helped and every life saved through safe driving awareness.
+                    Dacia serves as a social studies teacher at River Bluff High School, where she continues to inspire young minds daily. Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella&apos;s legacy lives on through every family helped and every life saved through safe driving awareness.
                   </p>
                 </div>
               </div>
@@ -235,7 +233,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl mb-4 text-black">Join Us in Making a Difference</h2>
           <p className="text-lg mb-8 text-black/80">
-            Help us continue Ella's legacy through your support and involvement.
+            Help us continue Ella&apos;s legacy through your support and involvement.
           </p>
           <Link
             href="/get-involved"

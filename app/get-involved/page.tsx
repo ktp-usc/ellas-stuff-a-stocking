@@ -1,9 +1,7 @@
-import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";
-import { DollarSign, Gift, Heart, QrCode, Smartphone, Users } from "lucide-react";
-//import eventImage from "figma:asset/1b2287fa386856a39cf2451acc2e82846b4b888b.png";
-import Link from "next/link";
+import { Gift, Heart, Users } from "lucide-react";
 import React from "react";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
+import {ImageWithFallback} from "@/components/figma/ImageWithFallback";
 
 export default function GetInvolved() {
   return (
@@ -13,7 +11,7 @@ export default function GetInvolved() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">Get Involved</h1>
           <p className="text-xl text-black/70">
-            Your support helps us honor Ella's legacy and make a real difference in our community.
+            Your support helps us honor Ella&apos;s legacy and make a real difference in our community.
           </p>
             <hr style={{ border: '1px solid black', width: '75%', margin: '40px auto' }} />
         </div>
@@ -48,7 +46,7 @@ export default function GetInvolved() {
                 <ul className="space-y-4 flex flex-col items-center justify-center">
                   <li className="flex gap-3">
                     <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
-                    <span className="text-black/80">Purchasing gifts and necessities for families during Ella's Stuff a Stocking</span>
+                    <span className="text-black/80">Purchasing gifts and necessities for families during Ella&apos;s Stuff a Stocking</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
@@ -112,7 +110,7 @@ export default function GetInvolved() {
               />
             </div>
           </div>
-          <p className="text-center mb-5  text-black/60 text-sm">Photo's from last year's Ella's Stuff-a-Stocking</p>
+          <p className="text-center mb-5 text-black/60 text-sm">Photo&apos;s from last year&apos;s Ella&apos;s Stuff-a-Stocking</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-black/10">
@@ -157,7 +155,7 @@ export default function GetInvolved() {
         <div className="bg-gradient-to-br from-[#FFB6D9] to-[#FFE5F1] rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-3xl mb-4 text-black">Ready to Get Involved?</h2>
           <p className="text-lg text-black/80 mb-8 max-w-2xl mx-auto">
-            Whether you're interested in volunteering, making a donation, or partnering with us, we'd love to hear from you. Together, we can make a lasting impact in our community.
+            Whether you&apos;re interested in volunteering, making a donation, or partnering with us, we&apos;d love to hear from you. Together, we can make a lasting impact in our community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="relative inline-block group">
