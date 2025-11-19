@@ -23,9 +23,13 @@ export function Footer() {
                             <Image src={logo} alt="Ella's Foundation Logo" className="h-16 w-auto p-2" />
                             <span className="text-sm text-gray-700">© 2025 Gabriella Shumate Memorial Foundation</span>
                         </div>
-                        <p className="text-sm text-gray-700">
-                            <a href="mailto:runellarun@gmail.com" className="inline-block bg-[#FFB6D9] hover:bg-[#fcaed3] text-black font-semibold py-2 px-4 rounded transition-colors">Contact Us!</a>
-                        </p>
+                        <div className="text-sm text-gray-700 relative inline-block group">
+                            <button className="inline-block bg-[#FFB6D9] hover:bg-[#fcaed3] text-black font-semibold py-2 px-4 rounded transition-colors cursor-default">Contact Us!</button>
+                            <div className="absolute bottom-full left-0 mb-2 hidden group-hover:block bg-[#FFE5F1] text-black px-4 py-3 rounded-lg shadow-lg whitespace-nowrap z-10">
+                                <div className="text-sm font-semibold">daciashu@gmail.com</div>
+                                <div className="text-sm">(253)-852-5022</div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right Column: Navigation Links */}

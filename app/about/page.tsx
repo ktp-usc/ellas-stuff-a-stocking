@@ -5,8 +5,7 @@ import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
 import { Card } from "../../components/ui/card";
 import { Heart, Target, Users } from "lucide-react";
 import React from "react";
-import ellaImage from "figma:asset/391755e80db83732d7649c19b83a0725a8609794.png";
-import riverBluffImage from "figma:asset/b8e3f9a2c5d1e7f4a8b2c6d9e3f7a1b5c8d2e6f9.png";
+
 
 export default function About() {
   return (
@@ -14,7 +13,7 @@ export default function About() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6 text-black">About the Gabriella Shumate Memorial Foundation</h1>
+          <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">About the Gabriella Shumate Memorial Foundation</h1>
           <p className="text-xl text-black/70">
             Honoring Ella's memory by making our community safer and supporting families in need.
           </p>
@@ -38,7 +37,7 @@ export default function About() {
                 Founded by Dacia and Devin Shumate, the foundation represents a commitment to turning tragedy into hope and action.
               </p>
               <p>
-                Based in Lexington, South Carolina, we work tirelessly to prevent similar tragedies through safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
+                Based in Lexington, South Carolina, we work to promote safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
               </p>
             </div>
           </div>
@@ -84,11 +83,11 @@ export default function About() {
                 <a href="https://wach.com/news/local/river-bluff-high-school-honors-the-memory-of-teachers-daughter-killed-by-drunk-driver" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block w-full max-w-[700px] h-72 relative rounded-2xl overflow-hidden">
+                  className="block max-w-[700px] h-72 relative rounded-2xl overflow-hidden transition-shadow hover:shadow-2xl">
                   <ImageWithFallback
                     src="/Images/Fox_article.png"
                     alt="Fox News Article"
-                    className="w-full h-full object-contain hover:opacity-90 transition-opacity"
+                    className="w-full h-full object-contain rounded-2xl transition-opacity"
                   />
                 </a>
               </div>
@@ -109,15 +108,15 @@ export default function About() {
                   "A nonprofit organization created to improve the lives of children in the community by helping schools build playgrounds and providing basic necessities for children in need"
                 </p>
               </div>
-              <div className="flex items-center justify-center p-4 order-1 md:order-2 rouded-xl border">
+              <div className="flex items-center justify-center p-4 order-1 md:order-2">
                 <a href="https://www.coladaily.com/lifestyle/photo-gallery-memorial-5k-remembers-little-girl-killed-by-drunken-driver/article_08a41084-30c4-56f9-b03a-3eec6a457255.html" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block w-full max-w-[700px] h-72 relative rounded-2xl overflow-hidden">
+                  className="block max-w-[700px] h-72 relative rounded-2xl overflow-hidden transition-shadow hover:shadow-2xl">
                   <ImageWithFallback
                     src="/Images/Cola_daily.png"
                     alt="Cola Daily Article"
-                    className="w-full h-full object-contain rounded-2xl hover:opacity-90 transition-opacity"
+                    className="w-full h-full object-contain rounded-2xl transition-opacity"
                   />
                 </a>
               </div>
@@ -230,68 +229,6 @@ export default function About() {
     </div>
   </div>
 </div>
-
-
-
-
-
-
-       {/* Our Team — Full width pink background, matching Founders section */}
-<div className="mb-20 bg-[#FFFFFF] rounded-2xl p-8 md:p-12">
-  <h2 className="text-3xl text-center font-medium mb-8 text-black">Our Team</h2>
-
-  {/* Grid: 1 column on mobile, 2 columns on md, centered inside */}
-  <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
-    {/* Dacia */}
-    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-      <div className="flex items-center gap-4">
-        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">DS</div>
-        <div>
-          <div className="font-semibold text-lg text-black">Dacia Shumate</div>
-          <div className="text-sm text-black">President</div>
-        </div>
-      </div>
-    </div>
-
-    {/* Devin */}
-    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-      <div className="flex items-center gap-4">
-        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">DV</div>
-        <div>
-          <div className="font-semibold text-lg text-black">Devin Shumate</div>
-          <div className="text-sm text-black">Vice President</div>
-        </div>
-      </div>
-    </div>
-
-    {/* Angel */}
-    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-      <div className="flex items-center gap-4">
-        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">AD</div>
-        <div>
-          <div className="font-semibold text-lg text-black">Angel DelPriore</div>
-          <div className="text-sm text-black">Board Member</div>
-        </div>
-      </div>
-    </div>
-
-    {/* Kristin */}
-    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-      <div className="flex items-center gap-4">
-        <div className="h-14 w-14 rounded-full bg-[#FFB6D9] flex items-center justify-center font-semibold text-black">KT</div>
-        <div>
-          <div className="font-semibold text-lg text-black">Kristin Truex</div>
-          <div className="text-sm text-black">Board Member</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
 
       {/* CTA Section */}
       <div className="bg-gradient-to-br from-[#FFB6D9] to-[#FFE5F1] py-16 px-4 sm:px-6 lg:px-8">
