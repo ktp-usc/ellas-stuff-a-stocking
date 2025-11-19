@@ -128,7 +128,7 @@ export default function Page() {
               <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
                 <Gift className="h-6 w-6" style={{ color: '#FFB6D9' }} />
               </div>
-              <CardTitle className="text-black">Elmentary School Playground Rennovations</CardTitle>
+              <CardTitle className="text-black">Elementary School Playground Rennovations</CardTitle>
               <CardDescription className="text-black/60">
                 Working with local elementary schools to renovate playgrounds and create safe play spaces for children.
               </CardDescription>
