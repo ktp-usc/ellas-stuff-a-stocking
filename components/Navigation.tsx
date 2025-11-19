@@ -20,7 +20,10 @@ export function Navigation() {
         <div className="flex items-center justify-between h-40">
           <Link href="/" className="flex items-center gap-4 h-32 w-auto">
               <Image src="/Images/logo_updated.png" alt="Ella's Foundation Logo" width={128} height={128} className="h-32 w-auto p-4" />
-              <span className="text-2xl text-black font-semibold italic">Gabriella Shumate Memorial Foundation</span>
+              <div className="flex flex-col">
+                <span className="text-4xl text-black font-semibold italic leading-tight">Gabriella Shumate</span>
+                <span className="text-4xl text-black font-semibold italic leading-tight">Memorial Foundation</span>
+              </div>
           </Link>
 
           <div className="flex gap-16">
