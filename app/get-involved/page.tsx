@@ -112,7 +112,7 @@ export default function GetInvolved() {
               />
             </div>
           </div>
-          <p className="text-center mb-5  text-black/60 text-sm">Photos from last year's Ella's Stuff-a-Stocking</p>
+          <p className="text-center mb-5  text-black/60 text-sm">Photo's from last year's Ella's Stuff-a-Stocking</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-black/10">
@@ -171,6 +171,12 @@ export default function GetInvolved() {
                 <div className="text-sm">(253)-852-5022</div>
               </div>
             </div>
+            <a
+              href="mailto:contact@ellasfoundation.org"
+              className="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-black/90 transition-colors"
+            >
+              Contact Us
+            </a>
             <a
               href="https://www.zeffy.com/en-US/donation-form/ella-stuff-a-stocking-program"
               target="_blank"
