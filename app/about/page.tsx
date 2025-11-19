@@ -5,8 +5,7 @@ import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
 import { Card } from "../../components/ui/card";
 import { Heart, Target, Users } from "lucide-react";
 import React from "react";
-import ellaImage from "figma:asset/391755e80db83732d7649c19b83a0725a8609794.png";
-import riverBluffImage from "figma:asset/b8e3f9a2c5d1e7f4a8b2c6d9e3f7a1b5c8d2e6f9.png";
+
 
 export default function About() {
   return (
@@ -38,7 +37,7 @@ export default function About() {
                 Founded by Dacia and Devin Shumate, the foundation represents a commitment to turning tragedy into hope and action.
               </p>
               <p>
-                Based in Lexington, South Carolina, we work tirelessly to prevent similar tragedies through safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
+                Based in Lexington, South Carolina, we work to promote safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
               </p>
             </div>
           </div>
@@ -84,11 +83,11 @@ export default function About() {
                 <a href="https://wach.com/news/local/river-bluff-high-school-honors-the-memory-of-teachers-daughter-killed-by-drunk-driver" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block w-full max-w-[700px] h-72 relative rounded-2xl overflow-hidden">
+                  className="block max-w-[700px] h-72 relative rounded-2xl overflow-hidden transition-shadow hover:shadow-2xl">
                   <ImageWithFallback
                     src="/Images/Fox_article.png"
                     alt="Fox News Article"
-                    className="w-full h-full object-contain hover:opacity-90 transition-opacity"
+                    className="w-full h-full object-contain rounded-2xl transition-opacity"
                   />
                 </a>
               </div>
@@ -109,15 +108,15 @@ export default function About() {
                   "A nonprofit organization created to improve the lives of children in the community by helping schools build playgrounds and providing basic necessities for children in need"
                 </p>
               </div>
-              <div className="flex items-center justify-center p-4 order-1 md:order-2 rouded-xl border">
+              <div className="flex items-center justify-center p-4 order-1 md:order-2">
                 <a href="https://www.coladaily.com/lifestyle/photo-gallery-memorial-5k-remembers-little-girl-killed-by-drunken-driver/article_08a41084-30c4-56f9-b03a-3eec6a457255.html" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block w-full max-w-[700px] h-72 relative rounded-2xl overflow-hidden">
+                  className="block max-w-[700px] h-72 relative rounded-2xl overflow-hidden transition-shadow hover:shadow-2xl">
                   <ImageWithFallback
                     src="/Images/Cola_daily.png"
                     alt="Cola Daily Article"
-                    className="w-full h-full object-contain rounded-2xl hover:opacity-90 transition-opacity"
+                    className="w-full h-full object-contain rounded-2xl transition-opacity"
                   />
                 </a>
               </div>

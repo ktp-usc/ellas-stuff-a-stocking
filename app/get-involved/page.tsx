@@ -89,7 +89,7 @@ export default function GetInvolved() {
               className="inline-block px-10 py-5 rounded-xl text-white text-2xl font-bold hover:opacity-90 transition-opacity"
               style={{ backgroundColor: '#000000', color: '#FFFFFF' }}
             >
-              Volunteer Now
+              Volunteer Now!
             </a>
             <p className="text-lg text-black/70 max-w-2xl mx-auto mt-6">
               Be part of something special. We have various volunteer opportunities throughout the year.
@@ -160,6 +160,17 @@ export default function GetInvolved() {
             Whether you're interested in volunteering, making a donation, or partnering with us, we'd love to hear from you. Together, we can make a lasting impact in our community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="relative inline-block group">
+              <button
+                className="bg-black text-white px-8 py-3 rounded-lg hover:bg-black/90 transition-colors cursor-default"
+              >
+                Contact Us
+              </button>
+              <div className="absolute bottom-full left-0 mb-2 hidden group-hover:block bg-black text-white px-4 py-3 rounded-lg shadow-lg whitespace-nowrap z-10">
+                <div className="text-sm font-semibold">daciashu@gmail.com</div>
+                <div className="text-sm">(253)-852-5022</div>
+              </div>
+            </div>
             <a
               href="mailto:contact@ellasfoundation.org"
               className="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-black/90 transition-colors"
