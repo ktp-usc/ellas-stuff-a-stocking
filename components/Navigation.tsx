@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from 'next/image';
+import ellas_logo from "@/public/Images/CanvaV6.png"
 
 export function Navigation() {
   const pathname = usePathname();
@@ -17,7 +18,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-40">
             <Link href="/" className="flex items-center h-32 w-auto">
-                <Image src="/Images/canvaV6.png" alt="Ella's Foundation Logo" width={948} height={177} className="h-32 w-auto" priority/>
+                <Image src={ellas_logo} alt="Ella's Foundation Logo" className="h-32 w-auto" priority/>
             </Link>
 
             <div className="flex gap-6" style={{ marginTop: '-16px' }}>
