@@ -11,7 +11,7 @@ export default function GetInvolved() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6 text-black">Get Involved</h1>
+          <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">Get Involved</h1>
           <p className="text-xl text-black/70">
             Your support helps us honor Ella's legacy and make a real difference in our community.
           </p>
@@ -29,45 +29,12 @@ export default function GetInvolved() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Venmo Card */}
-            <Card className="border-2" style={{ borderColor: '#FFB6D9' }}>
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="h-16 w-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FFE5F1' }}>
-                    <Smartphone className="h-8 w-8" style={{ color: '#FFB6D9' }} />
-                  </div>
-                </div>
-                <CardTitle className="text-black">Donate via Venmo</CardTitle>
-                <CardDescription className="text-black/60">
-                  Quick and easy donations through Venmo
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="bg-[#FFE5F1] rounded-xl p-8 mb-6">
-                  <div className="bg-white rounded-lg p-6 inline-block mb-4">
-                    <QrCode className="h-32 w-32" style={{ color: '#FFB6D9' }} />
-                  </div>
-                  <p className="text-sm text-black/60 mb-2">Scan QR code to donate</p>
-                  <p className="text-black/80">Or search for:</p>
-                  <p className="text-xl mt-2 text-black" style={{ color: '#FFB6D9' }}>@EllasFoundation</p>
-                </div>
-                <a
-                  href="https://venmo.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 rounded-lg text-white hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: '#FFB6D9', color: '#000000' }}
-                >
-                  Open Venmo
-                </a>
-              </CardContent>
-            </Card>
+          
 
             {/* Why Donate Card */}
-            <Card className="border-black/10">
+            <Card className="border-black/10 w-full max-w-lg mx-auto">
               <CardHeader>
-                <div className="flex justify-center mb-4">
+                <div className="flex justify-center mb-4 ">
                   <div className="h-16 w-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FFE5F1' }}>
                     <Heart className="h-8 w-8" style={{ color: '#FFB6D9' }} />
                   </div>
@@ -78,7 +45,7 @@ export default function GetInvolved() {
                 <p className="text-black/70 mb-6 text-center">
                   Your donations directly support:
                 </p>
-                <ul className="space-y-4">
+                <ul className="space-y-4 flex flex-col items-center justify-center">
                   <li className="flex gap-3">
                     <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
                     <span className="text-black/80">Purchasing gifts and necessities for families during Ella's Stuff a Stocking</span>
@@ -95,10 +62,21 @@ export default function GetInvolved() {
                     <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
                     <span className="text-black/80">Administrative costs to keep the foundation running</span>
                   </li>
+                  <a
+                  href="https://www.zeffy.com/en-US/donation-form/ella-stuff-a-stocking-program"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 rounded-lg text-white hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#FFB6D9', color: '#000000' }}
+                >
+                  Donate Now
+                </a>
                 </ul>
+
+                
               </CardContent>
             </Card>
-          </div>
+          
         </div>
 
         {/* Volunteer Section */}
@@ -118,7 +96,7 @@ export default function GetInvolved() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-4">
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <ImageWithFallback
                 src={encodeURI("/Images/Screenshot 2025-11-06 145643.png")}
@@ -134,7 +112,7 @@ export default function GetInvolved() {
               />
             </div>
           </div>
-          <p className="text-center mt-3 text-black/60 text-sm">Photo's from last year's Ella's Stuff-a-Stocking</p>
+          <p className="text-center mb-5  text-black/60 text-sm">Photo's from last year's Ella's Stuff-a-Stocking</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-black/10">
@@ -155,7 +133,7 @@ export default function GetInvolved() {
                   <Users className="h-6 w-6" style={{ color: '#FFB6D9' }} />
                 </div>
                 <CardTitle className="text-black">Gift Delivery</CardTitle>
-                <CardDescription className="text-black/60">
+                <CardDescription className="text-black/60 mb-5">
                   Help deliver wrapped gifts to families. This is a rewarding opportunity to see the direct impact of your efforts and bring joy to families.
                 </CardDescription>
               </CardHeader>
@@ -189,7 +167,7 @@ export default function GetInvolved() {
               Contact Us
             </a>
             <a
-              href="https://venmo.com/"
+              href="https://www.zeffy.com/en-US/donation-form/ella-stuff-a-stocking-program"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white px-8 py-3 rounded-lg hover:bg-white/90 transition-colors"

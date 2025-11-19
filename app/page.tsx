@@ -12,7 +12,7 @@ export default function Page() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6 text-black">Making a Difference in Our Community</h1>
+          <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">Making a Difference in Our Community</h1>
           <p className="text-xl text-black/70 max-w-3xl mx-auto">
             Join us in supporting families in need and promoting safe driving awareness in Columbia, South Carolina.
           </p>
@@ -128,7 +128,7 @@ export default function Page() {
               <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
                 <Gift className="h-6 w-6" style={{ color: '#FFB6D9' }} />
               </div>
-              <CardTitle className="text-black">Elmentary School Playground Rennovations</CardTitle>
+              <CardTitle className="text-black">Elementary School Playground Rennovations</CardTitle>
               <CardDescription className="text-black/60">
                 Working with local elementary schools to renovate playgrounds and create safe play spaces for children.
               </CardDescription>
