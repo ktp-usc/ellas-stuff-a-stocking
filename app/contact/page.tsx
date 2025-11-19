@@ -1,12 +1,14 @@
-import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
-import { Label } from "../ui/label";
-import { Textarea } from "../ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+"use client"
 
-export function Contact() {
+import { useState } from "react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
+import {Label} from "@/components/ui/label";
+import {Input} from "@/components/ui/input";
+import {Textarea} from "@/components/ui/textarea";
+import {Button} from "@/components/ui/button";
+
+export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,7 +53,7 @@ export function Contact() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl mb-6 text-black">Contact Us</h1>
           <p className="text-xl text-black/70">
-            Have questions or want to get involved? We'd love to hear from you.
+            Have questions or want to get involved? We&apos;d love to hear from you.
           </p>
         </div>
       </div>
@@ -67,7 +69,7 @@ export function Contact() {
                   Send Us a Message
                 </CardTitle>
                 <CardDescription className="text-black/60">
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Fill out the form below and we&apos;ll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -239,7 +241,7 @@ export function Contact() {
                   Interested in volunteering or making a donation? Visit our Get Involved page to learn more.
                 </p>
                 <a
-                  href="#/get-involved"
+                  href="/get-involved"
                   className="inline-block w-full text-center bg-black text-white px-4 py-2 rounded-lg hover:bg-black/90 transition-colors text-sm"
                 >
                   Get Involved

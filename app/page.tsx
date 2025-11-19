@@ -2,8 +2,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { Card, CardHeader, CardDescription, CardTitle } from "../components/ui/card";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { Card, CardHeader, CardDescription, CardTitle } from "@/components/ui/card";
 import { Calendar, Gift, Heart } from "lucide-react";
 
 export default function Page() {
@@ -35,7 +35,7 @@ export default function Page() {
             <div className="relative h-80 md:h-auto">
               <ImageWithFallback
                 src="/Images/Student Volunteers.jpg"
-                
+
                 className="w-full h-full object-cover"
               />
             </div>
@@ -46,7 +46,7 @@ export default function Page() {
                   Featured Event
                 </span>
               </div>
-              <h3 className="text-3xl mb-4 text-black">Ella's Stuff a Stocking</h3>
+              <h3 className="text-3xl mb-4 text-black">Ella&apos;s Stuff a Stocking</h3>
               <div className="flex items-center gap-2 mb-6 text-black/70">
                 <Calendar className="h-5 w-5" />
                 <span>Mid-December Annually</span>
@@ -68,7 +68,7 @@ export default function Page() {
                     </li>
                     <li className="flex gap-2">
                       <span className="mt-1.5 h-1.5 w-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
-                      <span>Participating schools "adopt" a family</span>
+                      <span>Participating schools &quot;adopt&quot; a family</span>
                     </li>
                     <li className="flex gap-2">
                       <span className="mt-1.5 h-1.5 w-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
@@ -90,7 +90,7 @@ export default function Page() {
                 href="https://lexingtonsc.org/community-event/ellas-stuff-a-stocking-at-river-bluff-high-school"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full h-56 md:h-full relative rounded-t-3xl md:rounded-l-3xl overflow-hidden shadow-md flex items-center justify-center bg-transparent"
+                className="w-full h-56 md:h-full relative rounded-t-3xl md:rounded-l-3xl overflow-hidden shadow-md flex items-center justify-center bg-transparent"
               >
                 <ImageWithFallback
                   src="/Images/DiazPicture.png"
@@ -103,7 +103,7 @@ export default function Page() {
             {/* Right: quote/text */}
             <div className="p-6 md:p-10 h-full flex items-center">
               <p className="text-black text-base md:text-lg font-semibold leading-snug italic">
-                "Over the past 11 years, Ella's Stuff A Stocking has profoundly impacted the magic of the holiday season for numerous children who might otherwise go without. The program reflects the compassion, unity, and generosity that defines the River Bluff High School community."
+                  &quot;Over the past 11 years, Ella&apos;s Stuff A Stocking has profoundly impacted the magic of the holiday season for numerous children who might otherwise go without. The program reflects the compassion, unity, and generosity that defines the River Bluff High School community.&quot;
               </p>
             </div>
           </div>
@@ -140,7 +140,7 @@ export default function Page() {
               <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
                 <Calendar className="h-6 w-6" style={{ color: '#FFB6D9' }} />
               </div>
-              <CardTitle className="text-black">Ella's Stuff-a-Stocking</CardTitle>
+              <CardTitle className="text-black">Ella&apos;s Stuff-a-Stocking</CardTitle>
               <CardDescription className="text-black/60">
                 Get involved through gift wrapping sessions and delivery assistance.
               </CardDescription>
