@@ -11,7 +11,7 @@ export default function GetInvolved() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6 text-black">Get Involved</h1>
+          <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">Get Involved</h1>
           <p className="text-xl text-black/70">
             Your support helps us honor Ella's legacy and make a real difference in our community.
           </p>
