@@ -112,7 +112,7 @@ export default function GetInvolved() {
               />
             </div>
           </div>
-          <p className="text-center mb-5  text-black/60 text-sm">Photo's from last year's Ella's Stuff-a-Stocking</p>
+          <p className="text-center mb-5  text-black/60 text-sm">Photos from last year's Ella's Stuff-a-Stocking</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-black/10">
