@@ -89,7 +89,7 @@ export default function GetInvolved() {
               className="inline-block px-10 py-5 rounded-xl text-white text-2xl font-bold hover:opacity-90 transition-opacity"
               style={{ backgroundColor: '#000000', color: '#FFFFFF' }}
             >
-              Volunteer Now
+              Volunteer Now!
             </a>
             <p className="text-lg text-black/70 max-w-2xl mx-auto mt-6">
               Be part of something special. We have various volunteer opportunities throughout the year.
