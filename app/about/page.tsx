@@ -37,7 +37,7 @@ export default function About() {
                 Founded by Dacia and Devin Shumate, the foundation represents a commitment to turning tragedy into hope and action.
               </p>
               <p>
-                Based in Lexington, South Carolina, we work tirelessly to prevent similar tragedies through safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
+                Based in Lexington, South Carolina, we work to promote safe driving awareness while simultaneously bringing joy to families facing financial hardships in our community.
               </p>
             </div>
           </div>

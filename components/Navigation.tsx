@@ -18,22 +18,18 @@ export function Navigation() {
     <nav className="bg-white border-b border-black/10 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-40">
-          <Link href="/" className="flex items-center gap-4 h-32 w-auto">
-              <Image src="/Images/logo_updated.png" alt="Ella's Foundation Logo" width={128} height={128} className="h-32 w-auto p-4" />
-              <div className="flex flex-col">
-                <span className="text-4xl text-black font-semibold italic leading-tight">Gabriella Shumate</span>
-                <span className="text-4xl text-black font-semibold italic leading-tight">Memorial Foundation</span>
-              </div>
+          <Link href="/" className="flex items-center h-32 w-auto">
+              <Image src="/Images/canvav5.png" alt="Ella's Foundation Logo" width={256} height={256} className="h-full w-auto" style={{ marginTop: '-32px', marginLeft: '-16px' }} />
           </Link>
 
-          <div className="flex gap-16">
+          <div className="flex gap-6" style={{ marginTop: '-32px' }}>
             {navLinks.map((link) => {
               const isActive = pathname === link.path;
               return (
                 <Link
                   key={link.path}
                   href={link.path}
-                  className={`text-2xl transition-colors ${
+                  className={`text-lg transition-colors ${
                     isActive
                       ? "text-black underline decoration-2"
                       : "text-black/60 hover:text-black"
