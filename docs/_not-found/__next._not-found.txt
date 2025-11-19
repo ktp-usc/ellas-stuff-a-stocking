@@ -1,0 +1,4 @@
+1:"$Sreact.fragment"
+2:I[81347,["/ellas-stuff-a-stocking/_next/static/chunks/cfde11ff14a464da.js","/ellas-stuff-a-stocking/_next/static/chunks/9c4284ab0cb40ae0.js"],"default"]
+3:I[13285,["/ellas-stuff-a-stocking/_next/static/chunks/cfde11ff14a464da.js","/ellas-stuff-a-stocking/_next/static/chunks/9c4284ab0cb40ae0.js"],"default"]
+0:{"buildId":"ae8oYpzk1RXBIPfUWHt1i","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}

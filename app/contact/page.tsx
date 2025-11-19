@@ -7,6 +7,7 @@ import {Label} from "@/components/ui/label";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
 import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -21,21 +22,16 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // TODO: Implement form submission to backend/email service
-    // Options:
-    // 1. EmailJS for client-side email sending
-    // 2. Backend API endpoint to handle form submissions
-    // 3. Third-party form service (Formspree, Netlify Forms, etc.)
+    console.log("Form submitted:", formData)
 
-    console.log("Form submitted:", formData);
-    
-    // Simulate submission delay
     setTimeout(() => {
-      setIsSubmitting(false);
-      alert("Thank you for your message! We'll get back to you soon. (This is a demo - form submission needs to be implemented)");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 1500);
-  };
+      setIsSubmitting(false)
+      alert(
+        "Thank you for your message! We'll get back to you soon. (Demo only — submission not connected) 🚀"
+      )
+      setFormData({ name: "", email: "", subject: "", message: "" })
+    }, 1500)
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -74,7 +70,7 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Name Field */}
+                  {/* Name */}
                   <div>
                     <Label htmlFor="name" className="text-black mb-2 block">
                       Name <span className="text-red-500">*</span>
@@ -82,7 +78,6 @@ export default function Contact() {
                     <Input
                       id="name"
                       name="name"
-                      type="text"
                       required
                       placeholder="Your full name"
                       value={formData.name}
@@ -91,7 +86,7 @@ export default function Contact() {
                     />
                   </div>
 
-                  {/* Email Field */}
+                  {/* Email */}
                   <div>
                     <Label htmlFor="email" className="text-black mb-2 block">
                       Email <span className="text-red-500">*</span>
@@ -101,14 +96,14 @@ export default function Contact() {
                       name="email"
                       type="email"
                       required
-                      placeholder="your@email.com"
+                      placeholder="you@email.com"
                       value={formData.email}
                       onChange={handleChange}
                       className="border-black/20 focus:border-[#FFB6D9]"
                     />
                   </div>
 
-                  {/* Subject Field */}
+                  {/* Subject */}
                   <div>
                     <Label htmlFor="subject" className="text-black mb-2 block">
                       Subject <span className="text-red-500">*</span>
@@ -116,7 +111,6 @@ export default function Contact() {
                     <Input
                       id="subject"
                       name="subject"
-                      type="text"
                       required
                       placeholder="What is this regarding?"
                       value={formData.subject}
@@ -125,7 +119,7 @@ export default function Contact() {
                     />
                   </div>
 
-                  {/* Message Field */}
+                  {/* Message */}
                   <div>
                     <Label htmlFor="message" className="text-black mb-2 block">
                       Message <span className="text-red-500">*</span>
@@ -134,62 +128,39 @@ export default function Contact() {
                       id="message"
                       name="message"
                       required
-                      placeholder="Tell us more about your inquiry..."
+                      placeholder="Tell us more..."
                       value={formData.message}
                       onChange={handleChange}
                       className="border-black/20 focus:border-[#FFB6D9] min-h-[150px]"
                     />
                   </div>
 
-                  {/* Submit Button */}
+                  {/* Submit */}
                   <Button
                     type="submit"
                     disabled={isSubmitting || !isFormValid}
                     className="w-full py-6 text-white hover:opacity-90 disabled:opacity-50"
                     style={{ backgroundColor: '#FFB6D9', color: '#000000' }}
                   >
-                    {isSubmitting ? (
-                      "Sending..."
-                    ) : (
-                      <span className="flex items-center justify-center gap-2">
-                        <Send className="h-5 w-5" />
-                        Send Message
-                      </span>
-                    )}
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
             </Card>
-
-            {/* Implementation Note for Developers */}
-            <Card className="mt-6 border-black/10">
-              <CardHeader>
-                <CardTitle className="text-black text-sm">For Developers: Form Submission Options</CardTitle>
-              </CardHeader>
-              <CardContent className="text-sm text-black/70 space-y-2">
-                <p>To implement form submission, consider these options:</p>
-                <ol className="list-decimal list-inside space-y-1 ml-2">
-                  <li><strong>EmailJS:</strong> Simple client-side email service (<code className="bg-black/5 px-1 rounded">npm install @emailjs/browser</code>)</li>
-                  <li><strong>Backend API:</strong> Create a backend endpoint to handle submissions and send emails</li>
-                  <li><strong>Formspree:</strong> Third-party form backend service (no coding required)</li>
-                  <li><strong>Netlify Forms:</strong> Built-in form handling if hosting on Netlify</li>
-                </ol>
-              </CardContent>
-            </Card>
           </div>
 
-          {/* Contact Info Sidebar */}
+          {/* Sidebar */}
           <div className="space-y-6">
             <Card className="border-black/10">
               <CardHeader>
-                <CardTitle className="text-black">Contact Information</CardTitle>
+                <CardTitle className="text-black">Contact Info</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex gap-3">
-                  <Mail className="h-5 w-5 flex-shrink-0 mt-0.5" style={{ color: '#FFB6D9' }} />
+                  <Mail className="h-5 w-5 mt-1" style={{ color: '#FFB6D9' }} />
                   <div>
-                    <p className="text-sm text-black/60 mb-1">Email</p>
-                    <a 
+                    <p className="text-sm text-black/60">Email</p>
+                    <a
                       href="mailto:contact@ellasfoundation.org"
                       className="text-black hover:underline"
                     >
@@ -199,23 +170,23 @@ export default function Contact() {
                 </div>
 
                 <div className="flex gap-3">
-                  <Phone className="h-5 w-5 flex-shrink-0 mt-0.5" style={{ color: '#FFB6D9' }} />
+                  <Phone className="h-5 w-5 mt-1" style={{ color: '#FFB6D9' }} />
                   <div>
-                    <p className="text-sm text-black/60 mb-1">Phone</p>
-                    <a 
-                      href="tel:+18035551234"
-                      className="text-black hover:underline"
-                    >
+                    <p className="text-sm text-black/60">Phone</p>
+                    <a href="tel:+18035551234" className="text-black hover:underline">
                       (803) 555-1234
                     </a>
                   </div>
                 </div>
 
                 <div className="flex gap-3">
-                  <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" style={{ color: '#FFB6D9' }} />
+                  <MapPin
+                    className="h-5 w-5 mt-1"
+                    style={{ color: "#FFB6D9" }}
+                  />
                   <div>
-                    <p className="text-sm text-black/60 mb-1">Location</p>
-                    <p className="text-black">Columbia, South Carolina</p>
+                    <p className="text-sm text-black/60">Location</p>
+                    <p className="text-black">Columbia, SC</p>
                   </div>
                 </div>
               </CardContent>
@@ -227,25 +198,22 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-black/70">
-                  We typically respond to inquiries within 24-48 hours. Thank you for your patience!
+                  We typically respond within 24–48 hours.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-black/10">
               <CardHeader>
-                <CardTitle className="text-black">Other Ways to Help</CardTitle>
+                <CardTitle className="text-black">Support Our Work</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3">
-                <p className="text-sm text-black/70">
-                  Interested in volunteering or making a donation? Visit our Get Involved page to learn more.
-                </p>
-                <a
+              <CardContent>
+                <Link
                   href="/get-involved"
-                  className="inline-block w-full text-center bg-black text-white px-4 py-2 rounded-lg hover:bg-black/90 transition-colors text-sm"
+                  className="block text-center bg-black text-white py-2 rounded-lg hover:bg-black/90 transition-colors text-sm"
                 >
                   Get Involved
-                </a>
+                </Link>
               </CardContent>
             </Card>
           </div>

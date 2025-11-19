@@ -1,6 +1,6 @@
 
-"use client";
-import React from "react";
+"use client"
+import { useState } from "react";
 import Link from "next/link";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { Card, CardHeader, CardDescription, CardTitle } from "@/components/ui/card";
