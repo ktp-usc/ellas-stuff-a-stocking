@@ -1,7 +1,13 @@
 import { Gift, Heart, Users } from "lucide-react";
 import React from "react";
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
-import {ImageWithFallback} from "@/components/figma/ImageWithFallback";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 export default function GetInvolved() {
   return (
@@ -9,11 +15,20 @@ export default function GetInvolved() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#FFE5F1] to-white py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">Get Involved</h1>
+          <h1 className="text-4xl sm:text-5xl mb-6 text-black mt-10">
+            Get Involved
+          </h1>
           <p className="text-xl text-black/70">
-            Your support helps us honor Ella&apos;s legacy and make a real difference in our community.
+            Your support helps us honor Ella&apos;s legacy and make a real
+            difference in our community.
           </p>
-            <hr style={{ border: '1px solid black', width: '75%', margin: '40px auto' }} />
+          <hr
+            style={{
+              border: "1px solid black",
+              width: "75%",
+              margin: "40px auto",
+            }}
+          />
         </div>
       </div>
 
@@ -23,58 +38,81 @@ export default function GetInvolved() {
           <div className="text-center mb-12">
             <h2 className="text-3xl mb-4 text-black">Make a Donation</h2>
             <p className="text-lg text-black/70 max-w-2xl mx-auto">
-              Your generous donations help us support families in need and promote safe driving awareness. Every contribution makes a difference.
+              Your generous donations help us support families in need and
+              promote safe driving awareness. Every contribution makes a
+              difference.
             </p>
           </div>
 
-          
-
-            {/* Why Donate Card */}
-            <Card className="border-black/10 w-full max-w-lg mx-auto">
-              <CardHeader>
-                <div className="flex justify-center mb-4 ">
-                  <div className="h-16 w-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FFE5F1' }}>
-                    <Heart className="h-8 w-8" style={{ color: '#FFB6D9' }} />
-                  </div>
+          {/* Why Donate Card */}
+          <Card className="border-black/10 w-full max-w-lg mx-auto">
+            <CardHeader>
+              <div className="flex justify-center mb-4 ">
+                <div
+                  className="h-16 w-16 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: "#FFE5F1" }}
+                >
+                  <Heart className="h-8 w-8" style={{ color: "#FFB6D9" }} />
                 </div>
-                <CardTitle className="text-black text-center">Your Impact</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-black/70 mb-6 text-center">
-                  Your donations directly support:
-                </p>
-                <ul className="space-y-4 flex flex-col items-center justify-center">
-                  <li className="flex gap-3">
-                    <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
-                    <span className="text-black/80">Purchasing gifts and necessities for families during Ella&apos;s Stuff a Stocking</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
-                    <span className="text-black/80">Safe driving awareness campaigns and educational materials</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
-                    <span className="text-black/80">Gift wrapping supplies and delivery coordination</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#FFB6D9' }}></span>
-                    <span className="text-black/80">Administrative costs to keep the foundation running</span>
-                  </li>
-                  <a
+              </div>
+              <CardTitle className="text-black text-center">
+                Your Impact
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-black/70 mb-6 text-center">
+                Your donations directly support:
+              </p>
+              <ul className="space-y-4 flex flex-col items-center justify-center">
+                <li className="flex gap-3">
+                  <span
+                    className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: "#FFB6D9" }}
+                  ></span>
+                  <span className="text-black/80">
+                    Purchasing gifts and necessities for families during
+                    Ella&apos;s Stuff a Stocking
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span
+                    className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: "#FFB6D9" }}
+                  ></span>
+                  <span className="text-black/80">
+                    Safe driving awareness campaigns and educational materials
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span
+                    className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: "#FFB6D9" }}
+                  ></span>
+                  <span className="text-black/80">
+                    Gift wrapping supplies and delivery coordination
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span
+                    className="mt-1.5 h-2 w-2 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: "#FFB6D9" }}
+                  ></span>
+                  <span className="text-black/80">
+                    Administrative costs to keep the foundation running
+                  </span>
+                </li>
+                <a
                   href="https://www.zeffy.com/en-US/donation-form/ella-stuff-a-stocking-program"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 rounded-lg text-white hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: '#FFB6D9', color: '#000000' }}
+                  style={{ backgroundColor: "#FFB6D9", color: "#000000" }}
                 >
                   Donate Now
                 </a>
-                </ul>
-
-                
-              </CardContent>
-            </Card>
-          
+              </ul>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Volunteer Section */}
@@ -85,12 +123,13 @@ export default function GetInvolved() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-10 py-5 rounded-xl text-white text-2xl font-bold hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: '#000000', color: '#FFFFFF' }}
+              style={{ backgroundColor: "#000000", color: "#FFFFFF" }}
             >
               Volunteer Now!
             </a>
             <p className="text-lg text-black/70 max-w-2xl mx-auto mt-6">
-              Be part of something special. We have various volunteer opportunities throughout the year.
+              Be part of something special. We have various volunteer
+              opportunities throughout the year.
             </p>
           </div>
 
@@ -110,41 +149,69 @@ export default function GetInvolved() {
               />
             </div>
           </div>
-          <p className="text-center mb-5 text-black/60 text-sm">Photo&apos;s from last year&apos;s Ella&apos;s Stuff-a-Stocking</p>
+          <p className="text-center mb-5 text-black/60 text-sm">
+            Photo&apos;s from last year&apos;s Ella&apos;s Stuff-a-Stocking
+          </p>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-black/10">
               <CardHeader>
-                <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
-                  <Gift className="h-6 w-6" style={{ color: '#FFB6D9' }} />
+                <div
+                  className="h-12 w-12 rounded-full flex items-center justify-center mb-4"
+                  style={{ backgroundColor: "#FFE5F1" }}
+                >
+                  <Gift
+                    className="h-6 w-6"
+                    style={{ color: "#FFB6D9" }}
+                  />
                 </div>
-                <CardTitle className="text-black">Gift Wrapping Sessions</CardTitle>
+                <CardTitle className="text-black">
+                  Gift Wrapping Sessions
+                </CardTitle>
                 <CardDescription className="text-black/60">
-                  Join us during mid-December to help wrap gifts for families. No experience necessary – just bring your enthusiasm and holiday spirit!
+                  Join us during mid-December to help wrap gifts for families.
+                  No experience necessary – just bring your enthusiasm and
+                  holiday spirit!
                 </CardDescription>
               </CardHeader>
             </Card>
 
             <Card className="border-black/10">
               <CardHeader>
-                <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
-                  <Users className="h-6 w-6" style={{ color: '#FFB6D9' }} />
+                <div
+                  className="h-12 w-12 rounded-full flex items-center justify-center mb-4"
+                  style={{ backgroundColor: "#FFE5F1" }}
+                >
+                  <Users
+                    className="h-6 w-6"
+                    style={{ color: "#FFB6D9" }}
+                  />
                 </div>
                 <CardTitle className="text-black">Gift Delivery</CardTitle>
                 <CardDescription className="text-black/60 mb-5">
-                  Help deliver wrapped gifts to families. This is a rewarding opportunity to see the direct impact of your efforts and bring joy to families.
+                  Help deliver wrapped gifts to families. This is a rewarding
+                  opportunity to see the direct impact of your efforts and bring
+                  joy to families.
                 </CardDescription>
               </CardHeader>
             </Card>
 
             <Card className="border-black/10">
               <CardHeader>
-                <div className="h-12 w-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#FFE5F1' }}>
-                  <Heart className="h-6 w-6" style={{ color: '#FFB6D9' }} />
+                <div
+                  className="h-12 w-12 rounded-full flex items-center justify-center mb-4"
+                  style={{ backgroundColor: "#FFE5F1" }}
+                >
+                  <Heart
+                    className="h-6 w-6"
+                    style={{ color: "#FFB6D9" }}
+                  />
                 </div>
                 <CardTitle className="text-black">Event Support</CardTitle>
                 <CardDescription className="text-black/60">
-                  Assist with event planning, coordination, and execution. Help us organize awareness campaigns and community outreach initiatives.
+                  Assist with event planning, coordination, and execution. Help
+                  us organize awareness campaigns and community outreach
+                  initiatives.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -155,20 +222,35 @@ export default function GetInvolved() {
         <div className="bg-gradient-to-br from-[#FFB6D9] to-[#FFE5F1] rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-3xl mb-4 text-black">Ready to Get Involved?</h2>
           <p className="text-lg text-black/80 mb-8 max-w-2xl mx-auto">
-            Whether you&apos;re interested in volunteering, making a donation, or partnering with us, we&apos;d love to hear from you. Together, we can make a lasting impact in our community.
+            Whether you&apos;re interested in volunteering, making a donation,
+            or partnering with us, we&apos;d love to hear from you. Together, we
+            can make a lasting impact in our community.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="relative inline-block group">
-              <button
-                className="bg-black text-white px-8 py-3 rounded-lg hover:bg-black/90 transition-colors cursor-default"
+
+          {/* Contact Info Block */}
+          <div className="flex flex-col items-center gap-1 mb-6 text-black font-medium">
+            <p>
+              Email:{" "}
+              <a
+                href="mailto:daciashu@gmail.com"
+                className="underline hover:text-black/70"
               >
-                Contact Us
-              </button>
-              <div className="absolute bottom-full left-0 mb-2 hidden group-hover:block bg-black text-white px-4 py-3 rounded-lg shadow-lg whitespace-nowrap z-10">
-                <div className="text-sm font-semibold">daciashu@gmail.com</div>
-                <div className="text-sm">(253)-852-5022</div>
-              </div>
-            </div>
+                daciashu@gmail.com
+              </a>
+            </p>
+            <p>
+              Phone:{" "}
+              <a
+                href="tel:2538525022"
+                className="underline hover:text-black/70"
+              >
+                (253)-852-5022
+              </a>
+            </p>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:contact@ellasfoundation.org"
               className="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-black/90 transition-colors"
@@ -180,7 +262,7 @@ export default function GetInvolved() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white px-8 py-3 rounded-lg hover:bg-white/90 transition-colors"
-              style={{ color: '#000000' }}
+              style={{ color: "#000000" }}
             >
               Donate Now
             </a>
