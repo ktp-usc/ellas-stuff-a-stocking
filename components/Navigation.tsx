@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState } from "react";
 import { Menu } from "lucide-react";
-import ellas_logo from "@/public/Images/CanvaV6.png";
+import ellas_logo from "@/public/Images/gbs-logo.jpeg";
 
 export function Navigation() {
   const pathname = usePathname();
