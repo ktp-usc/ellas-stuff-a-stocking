@@ -167,7 +167,7 @@ export default function About() {
                     Devin and Dacia Shumate founded The Gabriella Shumate Memorial Foundation in 2011 to honor the memory of Ella Shumate and to create positive change in their community. Their dedication has touched countless lives throughout Columbia, South Carolina.
                   </p>
                   <p className="text-black/80 leading-relaxed">
-                    Devin serves as a social studies teacher at River Bluff High School, where she continues to inspire young minds daily. Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella&apos;s legacy lives on through every family helped and every life saved through safe driving awareness.
+                    Devin serves as a social studies teacher at River Bluff High School, where he continues to inspire young minds daily. Together, Devin and Dacia channel their personal tragedy into meaningful action, ensuring that Ella&apos;s legacy lives on through every family helped and every life saved through safe driving awareness.
                   </p>
                 </div>
               </div>
